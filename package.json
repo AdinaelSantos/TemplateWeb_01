@@ -1,0 +1,26 @@
+{
+  "name": "templateweb_01",
+  "version": "1.0.0",
+  "description": "Praticando web...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch sass/style.scss:assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noelAAlmeida/TemplateWeb_01.git"
+  },
+  "author": "Noel_Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noelAAlmeida/TemplateWeb_01/issues"
+  },
+  "homepage": "https://github.com/noelAAlmeida/TemplateWeb_01#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@popperjs/core": "^2.6.0",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1"
+  }
+}

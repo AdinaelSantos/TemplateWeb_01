@@ -1,0 +1,33 @@
+//Partes obrigatórias
+///$gray-600: yellow;
+///$blue:    rgb(0, 88, 0);
+///$indigo:  #10f276 ;
+///$purple:  #424ac1;
+///$pink:    #1b1b1b !default;
+///$red:     #35dc3d !default;
+///$orange:  #fd7e14 !default;
+///$yellow:  #ffc107 !default;
+///$green:   #28a745 !default;
+///$teal:    #20c997 !default;
+///$cyan:    #17a2b8 !default;
+///$body-bg:                   blue;
+///$body-color:                white;
+
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/_mixins";
+/*@import "../../node_modules/bootstrap/scss/";
+@import "../../node_modules/bootstrap/scss/";
+@import "../../node_modules/bootstrap/scss/";*/
+
+
+/// Partes opcionais
+///@import "../../node_modules/bootstrap/scss/reboot";
+///@import "../../node_modules/bootstrap/scss/nav";
+///@import "../../node_modules/bootstrap/scss/navbar";
+///@import "../../node_modules/bootstrap/scss/forms";
+///@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/buttons";
+///@import "../../node_modules/bootstrap/scss/type";
+///@import "../../node_modules/bootstrap/scss/images";
+///@import "../../node_modules/bootstrap/scss/code";*/

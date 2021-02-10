@@ -1,0 +1,1 @@
+_animation, _fontwasome, _base, _tipografia

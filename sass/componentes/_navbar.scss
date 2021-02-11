@@ -1,0 +1,11 @@
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    .nav-item{
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        .nav-link:hover{
+            color: $primary;
+        }
+    }
+}

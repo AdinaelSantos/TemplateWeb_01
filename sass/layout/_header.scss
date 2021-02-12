@@ -1,0 +1,22 @@
+.header{
+    padding: $padding-2;
+}
+.titulo{
+    border-bottom: 5px solid $blue;
+    padding: $padding-1;
+    a{  text-decoration: none;
+        color: $gray-600;
+        letter-spacing: .2rem;
+        font-size:$fontSize-3;
+        &:hover{
+            color: $blue;
+        }
+        span{
+            color: $gray-700;
+            margin-right: .5rem;
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+}

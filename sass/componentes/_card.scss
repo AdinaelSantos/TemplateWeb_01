@@ -1,8 +1,4 @@
 .card{
-    display: flex;
-    flex-direction: column;
-    padding:$padding-3;
-    border-bottom: 2px solid $gray-400;
     .card-img{
         width: 100%;
         max-width:750PX;
@@ -18,7 +14,7 @@
         color: $gray-700;
         font-weight: bold;
         text-transform: capitalize;
-        margin-bottom: $margin;
+        margin: 3rem 0 1.5rem;
     }
     .card-h5{
         color: $gray-600;
@@ -31,4 +27,53 @@
         text-align: justify;
     }
 }
+/// card languages
+.card-languages{
+    h3{
+        font-size: $fontSize-3;
+        font-weight: bold;
+        color: $gray-700;
+        padding: $padding-2;
+        hr{
+            width: 220px;
+            border: 2px solid $blue;
+            margin: 1rem 0 0 0;
+        }
+    }
+    .card-display, .card-language-front{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+}
+.card-language-front{
+    span{
+        border: 2px solid $gray-400;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        transform: rotate(45deg);
+        .language-icon{
+            font-size: 2rem;
+            color: $black;
+            padding:1rem;
+            transform: rotate(-45deg);
+        }
+    
+    }
+    .card-text{
+        h5{
+            padding: $padding-2;
+            color: $gray-700;
+            font-weight: bold;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+}
 
+    

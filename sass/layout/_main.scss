@@ -1,0 +1,6 @@
+.main .card, .main .card-languages{
+    display: flex;
+    flex-direction: column;
+    padding:$padding-3;
+    border-bottom: 2px solid $gray-400;
+}

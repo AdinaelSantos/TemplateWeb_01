@@ -1478,12 +1478,6 @@ mark,
   color: #f95738;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 0;
-  border-bottom: 2px solid #ced4da;
-}
 .card .card-img {
   width: 100%;
   max-width: 750PX;
@@ -1491,14 +1485,14 @@ mark,
 .card .card-img .img {
   width: 100%;
   border-radius: 5px;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem 0;
 }
 
 .card-textos .card-h2 {
   color: #495057;
   font-weight: bold;
   text-transform: capitalize;
-  margin-bottom: 1rem;
+  margin: 3rem 0 1.5rem;
 }
 .card-textos .card-h5 {
   color: #6c757d;
@@ -1508,6 +1502,48 @@ mark,
 }
 .card-textos .card-p {
   color: #6c757d;
+  text-align: justify;
+}
+
+.card-languages h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #495057;
+  padding: 1rem 0;
+}
+.card-languages h3 hr {
+  width: 220px;
+  border: 2px solid #f95738;
+  margin: 1rem 0 0 0;
+}
+.card-languages .card-display, .card-languages .card-language-front {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.card-language-front span {
+  border: 2px solid #ced4da;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  transform: rotate(45deg);
+}
+.card-language-front span .language-icon {
+  font-size: 2rem;
+  color: #f95738;
+  padding: 1rem;
+  transform: rotate(-45deg);
+}
+.card-language-front .card-text h5 {
+  padding: 1rem 0;
+  color: #495057;
+  font-weight: bold;
+}
+.card-language-front .card-text p {
   text-align: justify;
 }
 
@@ -1534,6 +1570,13 @@ mark,
 }
 .titulo a span:hover {
   color: #f95738;
+}
+
+.main .card, .main .card-languages {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  border-bottom: 2px solid #ced4da;
 }
 
 .home-container {

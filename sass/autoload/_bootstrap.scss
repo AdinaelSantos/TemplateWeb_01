@@ -10,10 +10,12 @@ $gray-700: #495057 !default; ///cor do sistema
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 ///$black:    #000 !default;
-$black:    #f95738 !default; ///Cor de texto
+///$black:    #f95738 !default; ///Cor de texto
+$black:    #e71d36 !default; ///Cor de texto
 
 ///$blue:    #007bff !default;
-$blue:    #f95738; ///Primary color
+///$blue:    #f95738; ///Primary color
+$blue:    #e71d36;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -26,11 +28,20 @@ $cyan:    #17a2b8 !default;
 
 $body-bg:                   $gray-100;
 $body-color:                $gray-600;
-///minhas variaveis
 
+/*===========================================*/
+///minhas variaveis
+///cores:
+$corPrincipal:$blue;
+
+///fontes:
+$fonteColor:$black;
+///paddings:
 $padding-1: .7rem 0;
 $padding-2: 1rem 0;
 $padding-3: 2rem 0;
+$padding-4: 2.5rem;
+$padding-4: 3rem 0;
 
 $margin: 1rem;
 $margin-2: 2rem 0;
@@ -51,3 +62,4 @@ $fontSize-4: 2rem;
 @import "../../node_modules/bootstrap/scss/transitions";
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/card";

@@ -1,6 +1,18 @@
-.main .card, .main .card-languages{
+.main .card-banner, .main .card-languages, .main .section-cards{
+    padding:$padding-3;
+}
+.main .card-banner, .main .card-display{
     display: flex;
     flex-direction: column;
-    padding:$padding-3;
     border-bottom: 2px solid $gray-400;
+}
+@media screen and(min-width: 540px){
+    .main .card-banner, .main .card-languages, .main .section-cards{
+        padding:$padding-3;
+    }
+}
+@media screen and(min-width: 768px){
+    .main .card-banner, .main .card-languages, .main .section-cards{
+        padding:$padding-4;
+    }
 }

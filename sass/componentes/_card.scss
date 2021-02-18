@@ -44,6 +44,12 @@
         flex-direction: row!important;
         justify-content: space-between;
         align-items: inherit;
+        .card-img{
+            order: 2;
+        }
+        .card-textos{
+            order: 1;
+        }
         .card-img, .card-textos{
             width: 48%!important;
         }
@@ -174,12 +180,18 @@
    padding:.5rem;
    margin:.2rem;
    border-radius: 5px;
-   .card-img-top{
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    object-position: center;
-   }  
+   .card-container-img{
+       overflow: hidden;
+    .card-img-top{
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: center;
+        &:hover{
+            transform: scale(1.2);
+        }
+       }   
+    }
    .card-title{
        color:$gray-700;
        padding: $padding-3;

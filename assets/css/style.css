@@ -1862,11 +1862,17 @@ mark,
   margin: 0.2rem;
   border-radius: 5px;
 }
-.card .card-img-top {
+.card .card-container-img {
+  overflow: hidden;
+}
+.card .card-container-img .card-img-top {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
   object-position: center;
+}
+.card .card-container-img .card-img-top:hover {
+  transform: scale(1.2);
 }
 .card .card-title {
   color: #495057;
@@ -1948,6 +1954,33 @@ mark,
     padding: 3rem 0;
   }
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer p {
+  font-size: 1rem;
+}
+
+.footer .contatos {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contatos .contato-list {
+  margin: 0.3rem;
+}
+.contatos .contato-list .contato-link {
+  font-size: 1rem;
+}
+.contatos .contato-list .contato-link:hover {
+  text-decoration: none !important;
+}
+
 .home-container {
   width: 86%;
   margin: 0 auto;

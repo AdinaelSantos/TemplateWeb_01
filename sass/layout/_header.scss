@@ -1,9 +1,12 @@
 .header{
     padding: $padding-3;
+    
+}
+.header-nav{
+    border-bottom: 5px solid $blue !important;
+    padding: $padding-1;
 }
 .titulo{
-    border-bottom: 5px solid $blue;
-    padding: $padding-1;
     a{  text-decoration: none;
         color: $gray-600;
         letter-spacing: .2rem;
@@ -20,6 +23,7 @@
         }
     }
 }
+
 @media screen and(min-width: 768px){
     .titulo a{
         font-size:$fontSize-4;

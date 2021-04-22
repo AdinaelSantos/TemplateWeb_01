@@ -1744,6 +1744,12 @@ mark,
     justify-content: space-between;
     align-items: inherit;
   }
+  .card-banner .card-img {
+    order: 2;
+  }
+  .card-banner .card-textos {
+    order: 1;
+  }
   .card-banner .card-img, .card-banner .card-textos {
     width: 48% !important;
   }
@@ -1904,14 +1910,50 @@ mark,
     max-width: 700px;
   }
 }
+.conteiner-form {
+  position: relative;
+  background-color: #dee2e6;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+.conteiner-form .form {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.conteiner-form .form-close {
+  position: absolute;
+  font-size: 1.8rem;
+  top: 10px;
+  right: -25px;
+}
+.conteiner-form .form-close:hover {
+  text-decoration: none;
+}
+
+.pesquisa {
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 0.6rem;
+}
+
+.form-input {
+  width: 70%;
+  border-radius: 0.3rem;
+  line-height: 1.8rem;
+  border: none;
+}
+
 .header {
   padding: 2rem 0;
 }
 
-.titulo {
-  border-bottom: 5px solid #e71d36;
+.header-nav {
+  border-bottom: 5px solid #e71d36 !important;
   padding: 0.7rem 0;
 }
+
 .titulo a {
   text-decoration: none;
   color: #6c757d;
@@ -1969,6 +2011,8 @@ mark,
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
 }
 
 .contatos .contato-list {
@@ -1981,10 +2025,20 @@ mark,
   text-decoration: none !important;
 }
 
+.menu-lateral {
+  background-color: #e9ecef;
+  width: 350px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .home-container {
   width: 86%;
   margin: 0 auto;
   min-width: 320px;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

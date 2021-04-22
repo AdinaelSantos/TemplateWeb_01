@@ -1,0 +1,32 @@
+.conteiner-form{
+    position: relative;
+    background-color: $gray-300;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    .form{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .form-close{
+        position: absolute;
+        font-size: 1.8rem;
+        top: 10px;
+        right: -25px;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+.pesquisa{
+    color: white;
+    font-size: 1.4rem;
+    margin-left: .6rem;
+}
+.form-input{
+    width: 70%;
+    border-radius: .3rem;
+    line-height: 1.8rem;
+    border: none;
+}

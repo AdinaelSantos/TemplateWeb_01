@@ -1911,9 +1911,9 @@ mark,
   }
 }
 .conteiner-form {
-  position: relative;
+  /*   position: relative;*/
   background-color: #dee2e6;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: center;
 }
@@ -1922,27 +1922,149 @@ mark,
   display: flex;
   justify-content: center;
 }
-.conteiner-form .form-close {
-  position: absolute;
-  font-size: 1.8rem;
-  top: 10px;
-  right: -25px;
-}
-.conteiner-form .form-close:hover {
-  text-decoration: none;
-}
 
 .pesquisa {
   color: white;
   font-size: 1.4rem;
   margin-left: 0.6rem;
 }
+.pesquisa:hover {
+  color: #e71d36;
+}
 
 .form-input {
-  width: 70%;
+  width: 80%;
   border-radius: 0.3rem;
   line-height: 1.8rem;
   border: none;
+}
+.form-input:focus {
+  border-color: #e71d36;
+}
+
+.menu-lateral, .aside-section, .section-contatos {
+  position: relative;
+  background-color: #e9ecef;
+  padding: 0.5rem 1rem;
+}
+.menu-lateral h2, .aside-section h2, .section-contatos h2 {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #212529;
+  padding: 2rem 0 0.8rem;
+}
+.menu-lateral h2::after, .aside-section h2::after, .section-contatos h2::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #e71d36;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.menu-ul, .submenu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-ul .lateral-list {
+  border-bottom: 1px solid #ced4da;
+  padding: 1rem 0;
+}
+.menu-ul .lateral-list:last-child {
+  border-bottom: 2px solid #ced4da;
+  padding-bottom: 3rem;
+}
+.menu-ul .lateral-list .lateral-link, .menu-ul .lateral-list .lateral-link-submenu {
+  display: block;
+  text-transform: uppercase;
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+.menu-ul .lateral-list .lateral-link:hover, .menu-ul .lateral-list .lateral-link-submenu:hover {
+  color: #e71d36;
+  text-decoration: none;
+}
+
+.lateral-link, .lateral-link-submenu {
+  position: relative;
+}
+.lateral-link .seta-submenu, .lateral-link-submenu .seta-submenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.submenu {
+  display: none;
+  padding: 0.7rem 0 0.7rem 0.6rem;
+}
+.submenu .submenu-list .lateral-link {
+  color: #adb5bd;
+  line-height: 1.6rem;
+  font-size: 0.7rem;
+}
+
+/*1111111111111111111111111*/
+.lateral-list-toggle {
+  position: relative;
+}
+.lateral-list-toggle .submenu-open {
+  display: block;
+}
+
+.article-group {
+  padding: 0.5rem 0 0.5rem;
+}
+.article-group .article {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ced4da;
+}
+.article-group .article:last-child {
+  border-bottom: 2px solid #ced4da;
+}
+.article-group .article img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.article-group .article img:hover {
+  transform: scale(1.1);
+}
+.article-group .article p {
+  text-align: justify;
+  font-size: 0.8rem;
+}
+.article-group .article button {
+  text-transform: uppercase;
+}
+
+.section-contatos p {
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+}
+
+.contact-group .contact {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ced4da;
+  font-size: 0.8rem;
+}
+.contact-group .contact:last-child {
+  border-bottom: 2px solid #ced4da;
+}
+.contact-group .contact a {
+  color: #6c757d;
+}
+.contact-group .contact p {
+  display: inline;
+}
+
+.footer {
+  padding: 3rem 1rem;
+}
+.footer p {
+  font-size: 5rem;
 }
 
 .header {
@@ -2025,13 +2147,62 @@ mark,
   text-decoration: none !important;
 }
 
-.menu-lateral {
+.home-container {
+  position: relative;
+}
+
+.aside-open {
+  position: fixed;
   background-color: #e9ecef;
-  width: 350px;
-  height: 100%;
-  position: absolute;
+  top: 0;
+  left: -330px;
+  transform: translate(330px, 0);
+  transition: transform, 1s;
+  z-index: 1001;
+}
+@media screen and (min-width: 768px) {
+  .aside-open {
+    left: -380px;
+    transform: translate(380px, 0);
+  }
+}
+
+.aside-close {
+  position: fixed;
+  background-color: #e9ecef;
   top: 0;
   left: 0;
+  transform: translate(-330px, 0);
+  transition: transform, 1s;
+  z-index: 1001;
+}
+@media screen and (min-width: 768px) {
+  .aside-close {
+    transform: translate(-380px, 0);
+  }
+}
+
+.aside-overflow {
+  overflow: auto;
+  width: 300px;
+  height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  .aside-overflow {
+    width: 350px;
+  }
+}
+
+.aside-btn-close {
+  position: absolute;
+  z-index: 1002;
+  font-size: 1.5rem;
+  top: 20px;
+  right: -30px;
+}
+.aside-btn-close:hover {
+  color: #e71d36;
+  cursor: pointer;
 }
 
 .home-container {

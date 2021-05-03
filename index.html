@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--<link rel="stylesheet" href="assets/css/styleCompressed.css">-->
   </head>
-  <body class="fonts">
+  <body class="desabilitarConteudo fonts">
     
     <div class="home-container">
       <header class="header">
         <nav id="navbar" class="navbar navbar-light bg-light">
-          <button class="navbar-toggler" type="button" data-target="#menu_navagation">
+          <button class="navbar-toggler" type="button" id="aside-btn-open">
             <span class="navbar-toggler-icon"></span>
           </button><!--
           <ul class="navbar-nav">
@@ -164,15 +164,103 @@
         </ul>
       </footer>
     </div>
-    <aside class="menu-lateral">
-      <div class="conteiner-form">
-        <form class="form" action="#" method="POST">
-          <input class="form-input" type="search" placeholder="Search" >
-          <a class="pesquisa" type="submit"><i class=" fas fa-search"></i></a>
-        </form>
-        <a class="fas fa-times form-close"></a>
+    <aside class="aside-container aside-close">
+      <div class="aside-overflow">
+        <div class="conteiner-form">
+          <form class="form" action="#" method="POST">
+            <input class="form-input" type="search" placeholder="Search" >
+            <a href="https://www.uol.com.br/" target="_blank" class="pesquisa" type="submit"><i class=" fas fa-search"></i></a>
+          </form>
+        </div>
+        <nav class="menu-lateral">
+          <h2>Menu</h2>
+          <ul class="menu-ul">
+            <li class="lateral-list"><a class="lateral-link" href="#">homepage</a></li>
+            <li class="lateral-list"><a class="lateral-link" href="#">generic</a></li>
+            <li class="lateral-list"><a class="lateral-link" href="#">elements</a></li>
+            <li class="lateral-list lateral-list-toggle">
+  
+              <a class="lateral-link-submenu" href="#">submenu <i class="fas fa-chevron-down seta-submenu"></i></a>
+              <ul class="submenu">
+                <li class="submenu-list"><a class="lateral-link" href="#">Aenean ornare</a></li>
+                <li class="submenu-list"><a class="lateral-link" href="#">sit nullam</a></li>
+                <li class="submenu-list"><a class="lateral-link" href="#">egestas mauris</a></li>
+                <li class="submenu-list"><a class="lateral-link" href="#"> Integer mollis</a></li>
+              </ul>
+            </li>
+            <li class="lateral-list"><a class="lateral-link" href="#">printing and</a></li>
+            <li class="lateral-list lateral-list-toggle">
+  
+              <a class="lateral-link-submenu" href="#">standard <i class="fas fa-chevron-down seta-submenu"></i></a></a>
+              <ul class="submenu">
+                <li class="submenu-list"><a class="lateral-link" href="#">Aenean ornare</a></li>
+                <li class="submenu-list"><a class="lateral-link" href="#">sit nullam</a></li>
+                <li class="submenu-list"><a class="lateral-link" href="#">egestas mauris</a></li>
+                <li class="submenu-list"><a class="lateral-link" href="#"> Integer mollis</a></li>
+              </ul>
+            </li>
+            <li class="lateral-list"><a class="lateral-link" href="#">dummy submenu</a></li>
+            <li class="lateral-list"><a class="lateral-link" href="#">distribution</a></li>
+            <li class="lateral-list"><a class="lateral-link" href="#">desktop publishing</a></li>
+            <li class="lateral-list"><a class="lateral-link" href="#"> lorem ipsum </a></li>
+          </ul>
+        </nav>
+        <section class="aside-section">
+          <h2>Ante interdum</h2>
+          <div class="article-group">
+            <article class="article">
+              <img src="https://picsum.photos/id/1015/300/200" alt="">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde odit hic in consectetur adipisicing.
+              </p>
+            </article>
+            <article class="article">
+              <img src="https://picsum.photos/id/1016/300/200" alt="">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde odit hic in consectetur adipisicing. 
+              </p>
+            </article>
+            <article class="article">
+              <img src="https://picsum.photos/id/1018/300/200" alt="">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde odit hic in consectetur adipisicing.
+              </p>
+              <button type="button" class="btn btn-outline-primary">acesse</button>
+            </article>
+          </div>
+        </section>
+        <section class="section-contatos">
+          <h2>Get in touch</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem officia cupiditate, aut reprehenderit facere sunt fuga repellendus commodi voluptates fugiat, ipsum, enim veritatis suscipit voluptatum? Libero ad aliquam necessitatibus?
+          </p>
+          <div class="contact-group">
+            <div class="contact">
+              <i class="fas fa-envelope"></i>
+              <a href="#">noelnik13@hotmail.com</a>
+            </div>
+            <div class="contact">
+              <i class="fas fa-phone"></i>
+              <span>(71)98140-1925</span>
+            </div>
+            <div class="contact">
+              <i class="fas fa-house-damage"></i>
+              <p>
+                1234 Somewhere Road # 8254
+                , Nashville, TN 00000-0000
+              </p>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+         <p>
+          © Sem título. Todos os direitos reservados. Design: <a href="#">Noel Almeida</a>.
+         </p>
+        </footer>
       </div>
+      <span class="fas fa-times aside-btn-close"></span>
     </aside>
+  
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

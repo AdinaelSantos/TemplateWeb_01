@@ -1,0 +1,126 @@
+.menu-lateral, .aside-section, .section-contatos{
+    position: relative;
+    background-color: $gray-200;
+    padding: .5rem 1rem;
+    h2{
+        display: inline-block;
+        font-size: 1.2rem; ///font
+        font-weight: bolder;
+        color: $gray-900;
+        padding: 2rem 0 .8rem;
+        &::after{
+            content: '';
+            width: 100%;
+            height: 3px;
+            background-color: $blue;
+            margin-top: .5rem;
+            display: block;
+           
+        }
+    }
+}
+
+.menu-ul, .submenu{
+    list-style: none;
+    padding: 0;
+}
+.menu-ul{
+    .lateral-list{
+        border-bottom: 1px solid $gray-400;
+        padding: 1rem 0;
+        &:last-child{
+            border-bottom: 2px solid $gray-400;
+            padding-bottom: 3rem;
+        }
+        .lateral-link, .lateral-link-submenu{
+            display: block;
+            text-transform: uppercase;
+            color: $gray-600;
+            font-size: .8rem;  ///font
+            &:hover{
+                color: $blue;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.lateral-link, .lateral-link-submenu{
+    position: relative;
+    .seta-submenu{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+.submenu{
+    display: none;
+    padding: .7rem 0 .7rem .6rem;
+    .submenu-list .lateral-link{
+        color: $gray-500;
+        line-height: 1.6rem;
+        font-size: .7rem; ///font
+    }
+}
+/*1111111111111111111111111*/
+.lateral-list-toggle{
+    position: relative;
+    
+    .submenu-open{
+        display: block;
+    }
+   
+}
+.article-group{
+    padding: .5rem 0 .5rem;
+    .article{
+        padding: 1.5rem 0;
+        border-bottom: 1px solid $gray-400;
+        &:last-child{
+            border-bottom: 2px solid $gray-400;
+        }
+        img{
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            &:hover{
+                
+                transform:scale(1.1);
+            }
+        }
+        p{
+            text-align: justify;
+            font-size: .8rem; ////font
+        }
+        button{
+            text-transform: uppercase;
+        }
+    }
+}
+.section-contatos{
+    p{
+        font-size: .8rem;
+        padding: .5rem 0;
+    }
+}
+.contact-group{
+    .contact{
+        padding: 1.5rem 0;
+        border-bottom: 1px solid $gray-400;
+        font-size: .8rem;
+        &:last-child{
+            border-bottom: 2px solid $gray-400;
+        }
+        a{
+            color: $gray-600;
+        }
+        p{
+            display: inline;
+        }
+    }
+}
+.footer{
+    padding: 3rem 1rem;
+    p{
+        font-size: 5rem;
+    }
+}

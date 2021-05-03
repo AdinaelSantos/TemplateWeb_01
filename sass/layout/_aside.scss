@@ -1,8 +1,49 @@
-.menu-lateral{
+
+.home-container{// container principal
+    position: relative;
+}
+
+.aside-open{ 
+    position: fixed;
     background-color: $gray-200;
-    width: 350px;
-    height: 100%;
-    position: absolute;
+    top: 0;
+    left: -330px;
+    transform: translate(330px ,0);
+    transition: transform , 1s;
+    z-index: 1001;
+    @media screen and(min-width: 768px){
+        left: -380px;
+        transform: translate(380px ,0);
+    }
+}
+.aside-close{
+    position: fixed;
+    background-color: $gray-200;
     top: 0;
     left: 0;
+    transform: translate(-330px, 0);
+    transition: transform , 1s;
+    z-index: 1001;
+    @media screen and(min-width: 768px){
+        transform: translate(-380px, 0);
+    }
+}
+.aside-overflow{
+    overflow: auto;
+    width: 300px;
+    height: 100vh;
+    @media screen and(min-width: 768px){
+        width: 350px;
+    }
+}
+.aside-btn-close{
+    position: absolute;
+    z-index: 1002;
+    font-size: 1.5rem;
+    top: 20px;
+    right: -30px;
+    &:hover{
+        color: $blue;
+        cursor: pointer;
+    }
 }

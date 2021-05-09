@@ -1,4 +1,4 @@
-///import{funcoes} from "./funcoes";
+
 /// MENU DE NAVEGAÇAO DO HEADER CRIADO DINAMICAMENTE.
 
 //criando menu (ul, li, a)
